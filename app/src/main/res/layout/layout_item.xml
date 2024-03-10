@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:elevation="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/mainheading"
+                android:padding="@dimen/_2sdp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Main heading is displayed here"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="@dimen/_2sdp"
+                    android:id="@+id/content"
+                    android:textSize="@dimen/_8ssp"
+                    android:text="Main content"></TextView>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/ic_launcher_background">
+
+                </ImageView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="by Hung"
+                android:textSize="@dimen/_7ssp"
+                android:textStyle="italic"
+                android:id="@+id/author"
+                android:textColor="@color/blue"
+                android:padding="@dimen/_2sdp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/times"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Published At "
+                android:textSize="@dimen/_6ssp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
